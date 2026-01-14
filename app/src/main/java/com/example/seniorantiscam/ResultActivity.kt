@@ -5,7 +5,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,19 +22,19 @@ class ResultActivity : AppCompatActivity() {
 
         when {
             riskScore < 0.3 -> {
-                txtResult.text = "✅ Safe Message"
+                txtResult.text = getString(R.string.safe_message)
                 txtResult.setTextColor(0xFF2E7D32.toInt())
-                btnAction.text = "Go Back"
+                btnAction.text = getString(R.string.go_back)
             }
             riskScore < 0.7 -> {
-                txtResult.text = "⚠️ Suspicious Message"
+                txtResult.text = getString(R.string.suspicious_message)
                 txtResult.setTextColor(0xFFF9A825.toInt())
-                btnAction.text = "Call Trusted Contact"
+                btnAction.text = getString(R.string.call_trusted_contact)
             }
             else -> {
-                txtResult.text = "🚨 Scam Alert"
+                txtResult.text = getString(R.string.scam_alert)
                 txtResult.setTextColor(0xFFC62828.toInt())
-                btnAction.text = "Call Trusted Contact"
+                btnAction.text = getString(R.string.call_trusted_contact)
             }
         }
 

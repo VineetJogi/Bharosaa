@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
-class ContactSetupActivity : AppCompatActivity() {
+class ContactSetupActivity : BaseActivity() {
 
     private val CONTACT_PERMISSION_CODE = 101
     private val PICK_CONTACT_CODE = 102
@@ -39,7 +39,7 @@ class ContactSetupActivity : AppCompatActivity() {
 
         btnPickContact.setOnClickListener {
             if (contactList.size >= MAX_CONTACTS) {
-                Toast.makeText(this, "You can add only 4 contacts", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.only_4_contacts), Toast.LENGTH_SHORT).show()
             } else {
                 checkContactPermission()
             }

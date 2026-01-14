@@ -12,12 +12,28 @@
     <string name="language_model_download_failed">Language model download failed</string>
     <string name="paste">Paste</string>
     <string name="check">Check</string>
+    <string name="main_hint">Tip: Paste a message and press Check to see if it is a scam.</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="desc_paste">Paste text from clipboard</string>
+    <string name="desc_check">Check if this message is a scam</string>
+    <string name="desc_translate">Translate message content</string>
 
     <!-- ContactSetupActivity -->
     <string name="only_4_contacts">You can add only 4 contacts</string>
     <string name="no_contacts_added">No contacts added yet</string>
     <string name="continue">Continue</string>
     <string name="start">Start</string>
+
+    <!-- ContactSetupActivity -->
+    <string name="contacts_title">Trusted Contacts</string>
+    <string name="contacts_subtitle">Add up to 4 people you trust. We will call them if a scam is detected.</string>
+    <string name="pick_contact">Add Contact</string>
+    <string name="contacts_note">Tip: Tap "Add Contact" to select from your phone contacts.</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="desc_pick_contact">Add a trusted contact from phone</string>
+    <string name="desc_continue">Continue to the main screen</string>
 
     <!-- ResultActivity -->
     <string name="safe_message">✅ Safe Message</string>
@@ -28,6 +44,11 @@
 
     <!-- Generic -->
     <string name="ok">OK</string>
+
+    <!-- onboarding -->
+    <string name="onboarding_title">Welcome to Bharosaa</string>
+    <string name="onboarding_subtitle">Detects scam messages and helps you stay safe. Simple and easy to use.</string>
+    <string name="onboarding_image_desc">Onboarding illustration</string>
 </resources>
 <!--    <resources>-->
 <!--        <string name="app_name">सीनियर एंटी स्कैम</string>-->

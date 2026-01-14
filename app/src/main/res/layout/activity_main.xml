@@ -1,65 +1,153 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    android:background="#FFFFFF"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
 
-    <TextView
-        android:text="Check a Message for Scam"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="#1A237E"
-        android:layout_marginBottom="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/edtMessage"
-        android:hint="Paste the message here"
-        android:textSize="20sp"
-        android:minHeight="150dp"
-        android:gravity="top|start"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btnPaste"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#1A237E"
-        android:minHeight="64dp"
-        android:text="Paste Message"
-        android:textSize="22sp"
-        android:layout_marginTop="12dp"/>
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnCheck"
-        android:text="Check Message"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2E7D32"
-        android:minHeight="64dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
 
-    <Button
-        android:id="@+id/btnTranslate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Translate to Hindi"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:minHeight="64dp"
-        android:layout_marginTop="12dp"/>
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="top|start"
+            android:hint="@string/please_enter_message"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnPaste"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/paste"
+                android:textSize="18sp"
+                android:contentDescription="@string/desc_paste"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/check"
+                android:textSize="18sp"
+                android:contentDescription="@string/desc_check"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnTranslate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_translate_to_hindi"
+                android:textSize="18sp"
+                android:contentDescription="@string/desc_translate"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Optional help text -->
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_hint"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:gravity="center"-->
+<!--    android:background="#FFFFFF"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--    -->
+
+<!--    <TextView-->
+<!--        android:text="Check a Message for Scam"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#1A237E"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edtMessage"-->
+<!--        android:hint="Paste the message here"-->
+<!--        android:textSize="20sp"-->
+<!--        android:minHeight="150dp"-->
+<!--        android:gravity="top|start"-->
+<!--        android:background="@android:drawable/edit_text"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/btnPaste"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:backgroundTint="#1A237E"-->
+<!--        android:minHeight="64dp"-->
+<!--        android:text="Paste Message"-->
+<!--        android:textSize="22sp"-->
+<!--        android:layout_marginTop="12dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnCheck"-->
+<!--        android:text="Check Message"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:backgroundTint="#2E7D32"-->
+<!--        android:minHeight="64dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnTranslate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Translate to Hindi"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:minHeight="64dp"-->
+<!--        android:layout_marginTop="12dp"/>-->
 
 
-</LinearLayout>
+<!--</LinearLayout>-->

@@ -12,12 +12,27 @@
     <string name="language_model_download_failed">भाषा मॉडल डाउनलोड विफल</string>
     <string name="paste">पेस्ट</string>
     <string name="check">जाँचें</string>
+    <string name="main_hint">सुझाव: संदेश पेस्ट करें और स्कैम जानने के लिए जांचें दब���एँ।</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="desc_paste">क्लिपबोर्ड से पाठ पेस्ट करें</string>
+    <string name="desc_check">जांचें कि क्या यह संदेश स्कैम है</string>
+    <string name="desc_translate">संदेश का अनुवाद करें</string>
 
     <!-- ContactSetupActivity -->
     <string name="only_4_contacts">आप केवल 4 संपर्क जोड़ सकते हैं</string>
     <string name="no_contacts_added">कोई संपर्क अभी तक नहीं जोड़ा गया</string>
     <string name="continue">जारी रखें</string>
     <string name="start">शुरू करें</string>
+
+        <!-- ContactSetupActivity -->
+        <string name="contacts_title">विश्वसनीय संपर्क</string>
+        <string name="contacts_subtitle">उन लोगों को जोड़ें जिन पर आप भरोसा करते हैं (अधिकतम 4)। स्कैम होने पर हम इन्हें कॉल कर सकते हैं।</string>
+        <string name="contacts_note">सुझाव: फोन के संपर्कों से जोड़ने के लिए \'संपर्क जोड़ें' दबाएँ।'</string>
+
+        <!-- Accessibility descriptions -->
+        <string name="desc_pick_contact">फोन से विश्वसनीय संपर्क जोड़ें</string>
+        <string name="desc_continue">मुख्य स्क्रीन पर जाएँ</string>
 
     <!-- ResultActivity -->
     <string name="safe_message">✅ सुरक्षित संदेश</string>
@@ -28,4 +43,9 @@
 
     <!-- Generic -->
     <string name="ok">ठीक</string>
+
+    <!-- onboarding -->
+    <string name="onboarding_title">भरोसा में आपका स्वागत है</string>
+    <string name="onboarding_subtitle">यह स्कैम संदेशों का पता लगाता है और आपको सुरक्षित रखने में मदद करता है। सरल और उपयोग में आसान।</string>
+    <string name="onboarding_image_desc">ऑनबोर्डिंग चित्र</string>
 </resources>

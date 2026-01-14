@@ -12,7 +12,7 @@ import com.google.mlkit.common.model.DownloadConditions
 import com.google.mlkit.common.model.DownloadConditions.*
 import com.google.mlkit.nl.translate.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var btnPaste: Button
     private lateinit var btnTranslate: Button
     var isHindi = false
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             val message = edtMessage.text.toString().trim()
 
             if (message.isEmpty()) {
-                Toast.makeText(this, "Please enter a message", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.please_enter_message), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -43,21 +43,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnPaste.setOnClickListener {
-            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
             val clip = clipboard.primaryClip
 
             if (clip != null && clip.itemCount > 0) {
                 val pastedText = clip.getItemAt(0).text
                 edtMessage.setText(pastedText)
             } else {
-                Toast.makeText(this, "Clipboard is empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.clipboard_empty), Toast.LENGTH_SHORT).show()
             }
         }
         btnTranslate.setOnClickListener {
 
             val text = edtMessage.text.toString()
             if (text.isEmpty()) {
-                Toast.makeText(this, "No text to translate", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.no_text_to_translate), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -85,14 +85,14 @@ class MainActivity : AppCompatActivity() {
 
                             isHindi = !isHindi
                             btnTranslate.text =
-                                if (isHindi) "Translate to English" else "Translate to Hindi"
+                                if (isHindi) getString(R.string.label_translate_to_english) else getString(R.string.label_translate_to_hindi)
                         }
                         .addOnFailureListener {
-                            Toast.makeText(this, "Translation failed", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, getString(R.string.translation_failed), Toast.LENGTH_SHORT).show()
                         }
                 }
                 .addOnFailureListener {
-                    Toast.makeText(this, "Language model download failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.language_model_download_failed), Toast.LENGTH_SHORT).show()
                 }
         }
     }

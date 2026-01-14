@@ -1,37 +1,100 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:background="#FFFFFF"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
 
-    <TextView
-        android:text="Stay Safe from Scam Messages"
-        android:textColor="#000000"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="We help you identify dangerous messages and inform your family."
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_marginBottom="32dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnStart"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2E7D32"
-        android:text="Get Started"
-        android:textSize="22sp"
-        android:minHeight="64dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Optional App Illustration -->
+        <ImageView
+            android:id="@+id/imgOnboard"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_onboarding" />
+        <!-- replace with your drawable or remove
+            android:contentDescription="@string/onboarding_image_desc"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" -->
+
+        <!-- Big title -->
+        <TextView
+            android:id="@+id/txtOnboardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Short subtitle / explanation -->
+        <TextView
+            android:id="@+id/txtOnboardSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_subtitle"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="24dp" />
+
+        <!-- Large Start button for senior users -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textSize="20sp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center"-->
+<!--    android:padding="24dp"-->
+<!--    android:background="#FFFFFF"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <TextView-->
+<!--        android:text="Stay Safe from Scam Messages"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:text="We help you identify dangerous messages and inform your family."-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnStart"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:backgroundTint="#2E7D32"-->
+<!--        android:text="Get Started"-->
+<!--        android:textSize="22sp"-->
+<!--        android:minHeight="64dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--</LinearLayout>-->
