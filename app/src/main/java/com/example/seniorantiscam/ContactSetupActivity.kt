@@ -67,7 +67,7 @@ class ContactSetupActivity : BaseActivity() {
     private fun updateContactDisplay() {
         txtContacts.text = if (contactList.isEmpty()) {
             btnContinue.isEnabled = false
-            "No contacts added yet"
+            getString(R.string.no_contacts_added)
         } else {
             btnContinue.isEnabled = true
             contactList.joinToString("\n")
