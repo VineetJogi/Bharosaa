@@ -22,7 +22,7 @@
     <!-- ContactSetupActivity -->
     <string name="only_4_contacts">आप केवल 4 संपर्क जोड़ सकते हैं</string>
     <string name="no_contacts_added">कोई संपर्क अभी तक नहीं जोड़ा गया</string>
-    <string name="continue">जारी रखें</string>
+    <string name="continues">जारी रखें</string>
     <string name="start">शुरू करें</string>
 
         <!-- ContactSetupActivity -->

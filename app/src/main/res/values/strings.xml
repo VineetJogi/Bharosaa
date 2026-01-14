@@ -22,7 +22,7 @@
     <!-- ContactSetupActivity -->
     <string name="only_4_contacts">You can add only 4 contacts</string>
     <string name="no_contacts_added">No contacts added yet</string>
-    <string name="continue">Continue</string>
+    <string name="continues">Continue</string>
     <string name="start">Start</string>
 
     <!-- ContactSetupActivity -->
