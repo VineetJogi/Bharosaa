@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">भरोसा</string>
+
+    <!-- MainActivity -->
+    <string name="label_translate_to_hindi">हिंदी में अनुवाद</string>
+    <string name="label_translate_to_english">अंग्रेज़ी में अनुवाद</string>
+    <string name="please_enter_message">कृपया एक सन्देश दर्ज करें</string>
+    <string name="clipboard_empty">क्लिपबोर्ड खाली है</string>
+    <string name="no_text_to_translate">अनुवाद के लिए कोई पाठ नहीं है</string>
+    <string name="translation_failed">अनुवाद विफल हुआ</string>
+    <string name="language_model_download_failed">भाषा मॉडल डाउनलोड विफल</string>
+    <string name="paste">पेस्ट</string>
+    <string name="check">जाँचें</string>
+
+    <!-- ContactSetupActivity -->
+    <string name="only_4_contacts">आप केवल 4 संपर्क जोड़ सकते हैं</string>
+    <string name="no_contacts_added">कोई संपर्क अभी तक नहीं जोड़ा गया</string>
+    <string name="continue">जारी रखें</string>
+    <string name="start">शुरू करें</string>
+
+    <!-- ResultActivity -->
+    <string name="safe_message">✅ सुरक्षित संदेश</string>
+    <string name="suspicious_message">⚠️ संदिग्ध संदेश</string>
+    <string name="scam_alert">🚨 घोटाला चेतावनी</string>
+    <string name="go_back">वापस जाएँ</string>
+    <string name="call_trusted_contact">विश्वसनीय संपर्क को कॉल करें</string>
+
+    <!-- Generic -->
+    <string name="ok">ठीक</string>
+</resources>

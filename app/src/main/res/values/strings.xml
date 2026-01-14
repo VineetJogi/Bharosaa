@@ -1,8 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bharosaa</string>
 
-    <resources>
-        <string name="app_name">सीनियर एंटी स्कैम</string>
-        <string name="paste_message">मैसेज पेस्ट करें</string>
-        <string name="check_safety">सुरक्षा जांचें</string>
-        <string name="enter_message">यहाँ मैसेज पेस्ट करें</string>
-        <string name="language_button">English</string>
-    </resources>
+    <!-- MainActivity -->
+    <string name="label_translate_to_hindi">Translate to Hindi</string>
+    <string name="label_translate_to_english">Translate to English</string>
+    <string name="please_enter_message">Please enter a message</string>
+    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="no_text_to_translate">No text to translate</string>
+    <string name="translation_failed">Translation failed</string>
+    <string name="language_model_download_failed">Language model download failed</string>
+    <string name="paste">Paste</string>
+    <string name="check">Check</string>
+
+    <!-- ContactSetupActivity -->
+    <string name="only_4_contacts">You can add only 4 contacts</string>
+    <string name="no_contacts_added">No contacts added yet</string>
+    <string name="continue">Continue</string>
+    <string name="start">Start</string>
+
+    <!-- ResultActivity -->
+    <string name="safe_message">✅ Safe Message</string>
+    <string name="suspicious_message">⚠️ Suspicious Message</string>
+    <string name="scam_alert">🚨 Scam Alert</string>
+    <string name="go_back">Go Back</string>
+    <string name="call_trusted_contact">Call Trusted Contact</string>
+
+    <!-- Generic -->
+    <string name="ok">OK</string>
+</resources>
+<!--    <resources>-->
+<!--        <string name="app_name">सीनियर एंटी स्कैम</string>-->
+<!--        <string name="paste_message">मैसेज पेस्ट करें</string>-->
+<!--        <string name="check_safety">सुरक्षा जांचें</string>-->
+<!--        <string name="enter_message">यहाँ मैसेज पेस्ट करें</string>-->
+<!--        <string name="language_button">English</string>-->
+<!--    </resources>-->
